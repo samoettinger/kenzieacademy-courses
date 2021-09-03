@@ -789,11 +789,13 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
         color: #303030;
         font-size: 19px;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
     
     body .inicial .secaoCalendar .calendario{
         display: flex;
         justify-content: center;
+        margin-bottom: 100px;
     }
     
     body .inicial .secaoCalendar .calendario li{
@@ -859,7 +861,10 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
         font-size: 32px;
     }
 
-    /* Início da Seção Contato */
+    /* ////////////////////////////////////////////////// */
+    /* ////////////////////////////////////////////////// */
+
+    /* CONTATO Section */
     body .inicial .secaoContato{
         height: 750px;
         width: 100%;
@@ -868,7 +873,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     
     body .inicial .secaoContato .flex{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         
         height: 100%;
         width: 75%;
@@ -881,7 +886,13 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     body .inicial .secaoContato .flex .flex-col{
         color: #818181;
         font-size: 15px;
+        flex-grow: 1;
     }
+
+    body .inicial .secaoContato .flex #column-right{
+        width: 100px;
+    }
+
     
     /* Primeiro Bloco */
     body .inicial .secaoContato .flex .flex-col .secaoContato-informacoes{
@@ -910,16 +921,31 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         text-transform: uppercase;
-    
-        position: relative;
-        top: -65%; left: 50%;
-        transform: translateX(-25%);
+        margin-bottom: 20px;
     }
     
     /* Formulário */
     body .inicial .secaoContato .flex .flex-col form{
         text-align: end;
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    body .inicial .secaoContato .flex .flex-col #name{
+        flex-grow: 1;
+        padding-right: 20px;
+    }
+
+    body .inicial .secaoContato .flex .flex-col #e-mail{
+        flex-grow: 1;
+        padding-left: 20px;
+    }
+
+    body .inicial .secaoContato .flex .flex-col #textarea{
+        flex-grow: 1;
+        width: 100%;
+    }
+
     body .inicial .secaoContato .flex .flex-col form .form-input-model label{
         display: none;
     }
@@ -973,29 +999,29 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     
     /* Footer */
     body footer{
-        background-color: #F3F3F3;
+        background-color: #FFFFFF;
         text-align: center;
+        padding: 50px 0px;
     }
-    
-    body footer p{
-        color: #303030;
-    }
-    
+
     body footer .top-button{
-        
+        font-weight: 700;
         font-size: 50px;
-        font-weight: bolder;
-        background-color: #FFF;
-        
+
         height: 50px;
         width: 50px;
-        border-radius: 50%;
         margin: auto;
-        margin-bottom: 20px;
+        border-radius: 50%;
+        box-shadow: 2px 4px 3px #00000050;
     }
     
+    body footer .link-button{
+        margin-top: 20px;
+    }
+
     body footer p a{
         text-decoration: none;
         color: #007aff;
+        font-weight: 700;
     }
 }
